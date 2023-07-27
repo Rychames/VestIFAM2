@@ -70,7 +70,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center; /* Centralizar verticalmente os botões */
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 button[type="submit"] {
