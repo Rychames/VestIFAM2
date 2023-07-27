@@ -102,6 +102,7 @@ body.modal-open {
   .modal-content {
     width: 90%;
     max-width: 90%;
+    height: auto;
   }
   
   .form-group input {
