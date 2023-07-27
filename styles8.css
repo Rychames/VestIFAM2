@@ -19,21 +19,17 @@
   padding: 20px;
   border-radius: 5px;
   z-index: 10000;
-  width: 80%; /* Ajuste a largura desejada para o modal */
-  max-width: 400px; /* Defina uma largura máxima para o modal, se desejar */
-  margin-top: 40px; /* Espaçamento entre o topo do modal e o cabeçalho h2 */
-}
-.modal-content p{
-  text-align: center;
-  
+  width: 80%;
+  max-width: 400px;
+  margin-top: 40px;
 }
 
 /* Estilo para o botão de fechar */
 .close-button {
   position: absolute;
   top: 10px;
-  right: 10px; /* Posicionando o botão de fechar à direita */
-  font-size: 28px; /* Aumentando o tamanho do botão de fechar */
+  right: 10px;
+  font-size: 28px;
   cursor: pointer;
 }
 
@@ -42,35 +38,44 @@
   text-align: center;
   font-size: 30px;
   margin-bottom: 20px;
-  white-space: pre-line; /* Adicionando para quebrar a linha */
+  white-space: pre-line;
+}
+.modal-content p{
+  text-align: center;
 }
 
 /* Estilo para posicionar os campos no formulário e adicionar espaçamento */
 .form-group {
-  margin-bottom: 20px; /* Espaçamento entre os campos */
- 
+  margin-bottom: 20px;
 }
 
 .form-group label {
   display: block;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .form-group input {
   margin-top: 10px;
-  width: 390px;
+  width: 100%;
+  max-width: 99%;
   height: 37px;
   border-color: #007bff;
   border-radius: 15px;
-
-
 }
 
-/* Estilo para o botão de login */
+/* Estilo para os botões de login */
+.buttons-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centralizar verticalmente os botões */
+}
+
 button[type="submit"] {
-  display: block;
-  width: 30%; /* Aumentando a largura do botão para preencher o espaço disponível */
-  margin-left: 138px;
-  padding: 15px; /* Aumentando o tamanho do botão */
+  width: 100%;
+  max-width: 30%;
+  margin: 10px auto;
+  padding: 15px;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -78,17 +83,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-/* Estilo para o botão do Google */
-#buttonDiv {
-  text-align: center; /* Centralizar o botão */
-  margin-top: 20px; /* Ajuste o espaçamento superior desejado */
-  margin-left: 177px;
-  width: 300px;
-}
-
-/* Ajustes para deixar o botão do Google menor */
 #buttonDiv iframe {
-  
   height: 36px !important;
 }
 
@@ -97,4 +92,22 @@ body.modal-open {
   overflow-y: hidden;
   position: fixed;
   width: 100%;
+}
+
+/* Media queries para responsividade */
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    max-width: 90%;
+  }
+  
+  .form-group input {
+    width: 100%;
+    
+  }
+  
+  button[type="submit"] {
+    max-width: 99%;
+
+  }
 }
