@@ -70,6 +70,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center; /* Centralizar verticalmente os botões */
+  margin-bottom: 10px;
 }
 
 button[type="submit"] {
@@ -82,6 +83,7 @@ button[type="submit"] {
   border: none;
   border-radius: 15px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 #buttonDiv iframe {
