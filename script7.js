@@ -10,12 +10,11 @@ function handleCredentialResponse(response) {
     google.accounts.id.renderButton(
       document.getElementById("buttonDiv"),
       { theme: "outline",
-       type:"standard",
-       shape:"pill",
+       type:"icon",
+       shape:"circle",
        theme:"filled_black",
        text:"signin_with",
        size:"large",
-       logo_alignment:"left"
     
     
     

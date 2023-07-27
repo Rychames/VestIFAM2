@@ -1,61 +1,100 @@
 /* Estilo para o modal */
 .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 9999;
-  }
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 10000;
+  width: 80%; /* Ajuste a largura desejada para o modal */
+  max-width: 400px; /* Defina uma largura máxima para o modal, se desejar */
+  margin-top: 40px; /* Espaçamento entre o topo do modal e o cabeçalho h2 */
+}
+.modal-content p{
+  text-align: center;
   
-  .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    z-index: 10000;
-    width: 80%; /* Ajuste a largura desejada para o modal */
-    max-width: 500px; /* Defina uma largura máxima para o modal, se desejar */
-    margin-top: 40px; /* Espaçamento entre o topo do modal e o cabeçalho h2 */
-  }
+}
+
+/* Estilo para o botão de fechar */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Posicionando o botão de fechar à direita */
+  font-size: 28px; /* Aumentando o tamanho do botão de fechar */
+  cursor: pointer;
+}
+
+/* Estilo para centralizar o cabeçalho h2 */
+.modal-content h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  white-space: pre-line; /* Adicionando para quebrar a linha */
+}
+
+/* Estilo para posicionar os campos no formulário e adicionar espaçamento */
+.form-group {
+  margin-bottom: 20px; /* Espaçamento entre os campos */
+ 
+}
+
+.form-group label {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form-group input {
+  margin-top: 10px;
+  width: 390px;
+  height: 37px;
+  border-color: #007bff;
+  border-radius: 15px;
+
+
+}
+
+/* Estilo para o botão de login */
+button[type="submit"] {
+  display: block;
+  width: 30%; /* Aumentando a largura do botão para preencher o espaço disponível */
+  margin-left: 138px;
+  padding: 15px; /* Aumentando o tamanho do botão */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* Estilo para o botão do Google */
+#buttonDiv {
+  text-align: center; /* Centralizar o botão */
+  margin-top: 20px; /* Ajuste o espaçamento superior desejado */
+  margin-left: 177px;
+  width: 300px;
+}
+
+/* Ajustes para deixar o botão do Google menor */
+#buttonDiv iframe {
   
-  /* Estilo para centralizar o cabeçalho h2 */
-  .modal-content h2 {
-    text-align: center;
-    font-size: 24px; /* Ajuste o tamanho da fonte desejado */
-    margin-bottom: 20px; /* Adicione um espaçamento inferior para separar o cabeçalho dos campos de entrada */
-  }
-  
-  /* Estilo para posicionar os campos no formulário */
-  .form-group {
-    margin-bottom: 10px;
-  }
-  
-  .form-group label {
-    display: block;
-  }
-  
-  /* Estilo para o botão de login */
-  button[type="submit"] {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Estilo para desabilitar a rolagem quando o modal estiver aberto */
-  body.modal-open {
-    overflow-y: hidden;
-    position: fixed;
-    width: 100%;
-  }
-  
+  height: 36px !important;
+}
+
+/* Estilo para desabilitar a rolagem quando o modal estiver aberto */
+body.modal-open {
+  overflow-y: hidden;
+  position: fixed;
+  width: 100%;
+}
